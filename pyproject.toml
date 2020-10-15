@@ -3,7 +3,9 @@ authors = ["duyixian <duyixian1234@qq.com>"]
 description = "Simeple Entity Type for DDD development."
 license = "MIT"
 name = "simple-entity"
-version = "0.1.0"
+readme = "README.md"
+repository = "https://github.com/duyixian1234/simple-entity"
+version = "0.1.1"
 
 [tool.poetry.dependencies]
 python = "^3.8"
