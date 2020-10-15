@@ -95,8 +95,8 @@ def __get_annotations__(_type: type):
 def method_call_log(obj, method_name: str):
     def outter(func):
         def inner(*args, **kwargs):
+            Config.log(f'Call method <{method_name}> of {repr(obj)} with args {args} kwargs {kwargs}')
             ret = func(*args, **kwargs)
-            Config.log(f'Call method "{method_name}" of {obj} with args {args} kwargs {kwargs} returns {ret}')
             return ret
 
         return inner

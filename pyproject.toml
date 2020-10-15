@@ -16,6 +16,7 @@ mypy = "^0.790"
 pylint = "^2.6.0"
 pytest = "^6.1.1"
 pytest-cov = "^2.10.1"
+rope = "^0.18.0"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
@@ -41,7 +42,7 @@ disable = ["missing-docstring", "logging-fstring-interpolation"]
 min-public-methods = 0
 
 [tool.pytest.ini_options]
-addopts = "-ra -svv --cov=u_coreutils"
+addopts = "-ra -svv --cov=simple_entity"
 minversion = "6.0"
 testpaths = [
   "tests",
